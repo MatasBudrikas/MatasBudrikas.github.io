@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+    background-color: rgb(46, 46, 48);
+    color: ivory;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.default-theme #header1 {
+    background-color: rgb(42, 56, 56);
+}
+
+.alt-theme #header1 {
+    background-color: rgb(68, 61, 47);
+}
+.boldtext {
+    font-weight: bold;
+}
+.HPlist {
+    font-weight: bold;
+    display: inline-flex;
+    font-family: sans-serif;
+    font-size: 75%;
+}
+
+#header1 {
+    text-align: center;
+    background-color: rgb(42, 56, 56);
+    border: 3px darkslategrey solid;
+    width: fit-content;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    padding-top: 5px;
+}
+
+.tabLinks {
+    grid-template-rows: 4;
+}
+.Eheader,
+.Emain,
+.Efooter {
+    padding: 15px;
+}
+
+.Eheader {
+    grid-area: header;
+}
+
+.Emain {
+    grid-area: main;
+    background-color: rgb(42, 56, 56);
+    border: 3px solid darkslategrey;
+    padding: 5px;
+}
+
+.Efooter {
+    grid-area: footer;
+    height: auto;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid aquamarine;
+    background-color: lightcyan;
+    padding-bottom: 3px;
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
+}
+  
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px solid cyan;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: 0.2s;
+    text-align: center;
+    align-items: center;
+}
+  
+
+.tab button:hover {
+    background-color: lightskyblue;
+}
+  
+
+.tab button.active {
+    background-color: turquoise;
+}
+
+#titlebutton {
+    margin: auto;
+    align-items: center;
+    display: inline-flex;
+}
+
+.tabContent {
+    color: rgb(13, 11, 36);
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid darkslategray;
+    border-top: none;
+    height: auto;
+    box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
+    background-color: mediumaquamarine;
+}
+
+@media (min-width: 768px) {
+    body {
+      grid-template-areas:
+        'header header  header'
+        '.      main    .'
+        'footer footer  footer';
+      grid-template-columns: auto 550px auto;
+      grid-template-rows: 125px auto 50px;
+
+    }
+  }
+
+
+@media (min-width: 1024px) {
+    body {
+      grid-template-columns: auto 1000px auto;
+    }
+  }
