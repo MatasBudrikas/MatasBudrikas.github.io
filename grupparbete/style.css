@@ -1,6 +1,8 @@
 body {
     margin: 0px;
-    background-color: rgb(46, 46, 48);
+    background: url(board.png) no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
     color: ivory;
     display: grid;
     grid-template-areas: 
@@ -40,6 +42,8 @@ body {
     padding-right: 10px;
     border-radius: 3px;
     padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .tabLinks {
@@ -98,9 +102,9 @@ body {
 }
 
 #titlebutton {
-    margin: auto;
-    align-items: center;
-    display: inline-flex;
+    margin-left: auto;
+    align-self: center;
+    display: inline-block;
 }
 
 .tabContent {
@@ -112,6 +116,7 @@ body {
     height: auto;
     box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
     background-color: mediumaquamarine;
+    background-size: cover;
 }
 
 @media (min-width: 768px) {
