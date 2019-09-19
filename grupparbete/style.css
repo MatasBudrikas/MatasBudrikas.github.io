@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: url(board.png) no-repeat;
+    background: url(turq.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     color: ivory;
@@ -115,7 +115,7 @@ body {
     border-top: none;
     height: auto;
     box-shadow: 0px -2px 2px rgba(34,34,34,0.6);
-    background-color: mediumaquamarine;
+    background-color: turquoise;
     background-size: cover;
 }
 
